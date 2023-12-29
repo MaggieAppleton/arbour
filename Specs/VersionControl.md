@@ -25,6 +25,8 @@ Having version control should help lower the friction to publishing. I predict i
 - When viewing an older version, there should be a clearly visible banner or section directing readers to the latest version.
 - Each version should show the date it was published.
 
+To be clear, writers can and should still fix and update small parts of their posts without making new versions. Versions are an optional tool they can use when they plan to make substantial edits. Writers could ignore the versioning system altogether and publish V0's of everything that they edit directly.
+
 **Versions and RSS**
 - New versions should be published to the RSS feed by default.
   - Maybe writers should be able to toggle this on/off in global settings. E.g. `publishNewVersionsToRSS = true/false`
@@ -37,9 +39,17 @@ Giving writers more control over what gets pushed to their RSS helps reduce the 
 
 **Versions and URLs**
 
-URLs are tricky because we want to keep these simple and readable. We also need a canonical URL for each post that looks like `garden.com/best-nuts-for-squirrels` 
+- Each version will need its own URL.
+- We also want to have one, simple, canonical URL for each post. Something like `garden.com/best-nuts-for-squirrels` 
 
-To be clear, writers can and should still fix and update small parts of their posts without making new versions. Versions are an optional tool they can use when they plan to make substantial edits. Writers could ignore the versioning system altogether and publish V0's of everything that they edit directly.
+- When a reader goes to that canonical URL, it should redirect them to the latest version of the post.
+  - For example, if I have three versions of a post, and you go to `garden.com/best-nuts-for-squirrels`, it should redirect you to `garden.com/best-nuts-for-squirrels/v3`.
+  - You can still navigate to `garden.com/best-nuts-for-squirrels/v2` and v1.  
+
+- When you copy or share the URL around the web, it should *ideally* be the canonical URL, but that's hard to enforce.
+  - We'll use that link on share buttons.
+  - If readers copy the true URL from the address bar they'll be linking to a specific version, but that's fine.
+
 
 ## User Journeys
 
