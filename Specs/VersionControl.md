@@ -63,7 +63,13 @@ With this system, users can have a list of both markdown files and folder in a s
 
 ### Reader
 
-
+- I open a link on someone's garden. If it's the only version of a post, I don't see anything about versions on the page. Simple.
+- If I open a link on someone's garden that has multiple versions and I'm on the latest one, I see some icon or text related to versions.
+  - I can see I'm on the latest one.
+  - I can click to see earlier versions.
+- If I open a link on someone's garden that has multiple versions and I'm on the 1st version
+  - I see a banner/section near the top that tells me this isn't the latest version
+  - I can click a link to view the latest version.
 
 
 ## Open Questions
