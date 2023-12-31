@@ -9,15 +9,16 @@ It features are designed help lower the friction to publishing your ideas online
 - Version history so readers can see how content evolves over time
 - Unique, customisable content types (book, essay, note, podcast, question, zettle, code snippet, etc.)
 - Different designs and behaviour for micro (small) and macro (big) content
-- Cross-post microposts to other sites: Bluesky, Mastodon, and Facebook
+- Cross-post micro content to other sites: Bluesky, Mastodon, Instagram, and Facebook
 - Fine-grained control of RSS publishing – choose what to publish and when
 - Beautiful, minimalist design
 - Readable typography
 
 ## Who is this for?
 
-People who know at least a little about web development.
-Ideally you know more than a little, but others can Google/ChatGPT their way through unfamiliar steps in the process. It's built with core web technologies: HTML, CSS, JavaScript, and Markdown. If you want to edit or customise your Arbour setup, you'll need to learn some basics.
+People who know at least a little about web development. Ideally you know more than a little, but others can Google/ChatGPT their way through unfamiliar steps in the process.
+
+It's built with core web technologies: HTML, CSS, JavaScript, and Markdown. If you want to edit or customise your Arbour setup, you'll need to learn some basics about those.
 
 At the very least, you'll need to know how to clone a Git repo, `npm install` or `yarn install` the project, edit HTML and markdown files in a text editor, and deploy your garden somewhere like Netlify or Vercel.
 

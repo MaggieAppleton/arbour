@@ -6,11 +6,15 @@ People tend to create two sizes of content on the web: micro content like Tweets
 
 **Micro posts**
 
-Micro posts are very small pieces of content – they tend to be 1-3 sentences long. They don't have titles, descriptions, or tags. They're quick and easy to write, and sometimes act as the seeds of larger ideas. Their brevity is a feature, not a bug. You have to state your point clearly and concisely.
+Micro posts are very small pieces of content – they tend to be only a few sentences long. They don't have titles, descriptions, or tags. They're quick and easy to write, and sometimes act as the seeds of larger ideas. Their brevity is a feature, not a bug. You have to state your point clearly and concisely.
+
+Questions, beliefs, jokes, haikus, zettles, and quotes are all examples of micro content.
 
 People tend to publish micro posts on large, proprietary platforms like Twitter/X, Mastodon, Threads, and Tumblr. Likely because micro posts are well suited to social interactions. They're invitations for conversation and banter. So you need to publish them somewhere other people can respond to them.
 
 While the social benefits of publishing to centralised social media make sense, the trade-off is we don't have control and ownership over the words we're writing. Elon is likely to burn down the Twitter/X servers at some point, and all our clever thoughts, poems, insights, and clap backs will go with it. Having them on a separate proprietary platform also means you can't connect your micro posts to the rest of your ideas.
+
+With IndieWeb technologies like [Web Mentions](https://webmention.io/) and [brid.gy](https://brid.gy/) we can have our social interaction cake and own it too. Writers can publish micro posts to their own site, cross-post it to Mastodon, Bluesky, Instagram, and Threads, and display interactions / replies on their own site. More implementation detail on this below.
 
 **Macro posts**
 
@@ -31,3 +35,6 @@ I think many other blog and garden designs fail by muddling these two up. They e
 For example, many themes show macro content that's _way_ too long as a stacked list. So you have to scroll for miles to get to the next post, and can't quickly scan over a set of titles or navigate between them.
 
 Other themes make every piece of content its own standalone page you have to click through to. When you arrive, the content is only a few sentences long and looks silly floating in a sea of empty space.
+
+## Proposed Solution
+
