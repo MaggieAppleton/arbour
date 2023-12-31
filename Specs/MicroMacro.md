@@ -21,3 +21,7 @@ Macro posts are what we traditionally find on blogs and gardens. They're medium 
 Almost no blogging frameworks or platform supports both micro and macro content.
 
 These two sizes need to be treated differently. You read, browse, and navigate through micro and macro content in different ways.
+
+Micro content is best browsed as a stacked list so you can scroll down to read one after another. Much like Twitter, Mastodon, and Threads. It doesn't necessarily need its own separate page (although for the sake of linking it should have one).
+
+Macro content needs a preview to show on an index page so you can scan over the titles and pick one to navigate to.
