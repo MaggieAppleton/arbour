@@ -24,4 +24,10 @@ These two sizes need to be treated differently. You read, browse, and navigate t
 
 Micro content is best browsed as a stacked list so you can scroll down to read one after another. Much like Twitter, Mastodon, and Threads. It doesn't necessarily need its own separate page (although for the sake of linking it should have one).
 
-Macro content needs a preview to show on an index page so you can scan over the titles and pick one to navigate to.
+Macro content needs a preview to show on an index page so you can scan over the titles and pick one to navigate to. You then enter a focused reading page with the full content on it.
+
+I think many other blog and garden designs fail by muddling these two up. They either optimise for micro content, making macro hard to read. Or optimise for macro content, making micro content hard to read.
+
+For example, many themes show macro content that's _way_ too long as a stacked list. So you have to scroll for miles to get to the next post, and can't quickly scan over a set of titles or navigate between them.
+
+Other themes make every piece of content its own standalone page you have to click through to. When you arrive, the content is only a few sentences long and looks silly floating in a sea of empty space.
