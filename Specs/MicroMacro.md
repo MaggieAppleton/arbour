@@ -62,4 +62,3 @@ Some sensible default types to start with:
 - Twoot (micro) – equivalent of a tweet, but a funnier word (mashup of tweet, toot, and thread)
 - Question (micro)
 - Book (micro)
-- Zettle (micro)
