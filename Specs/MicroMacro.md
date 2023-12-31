@@ -38,13 +38,13 @@ Other themes make every piece of content its own standalone page you have to cli
 
 ## Proposed Solution
 
-Explicitly distinguish micro from macro content in Arbour.
+Explicitly distinguish micro and macro content in Arbour.
 
 When you create a new type of content, you decide whether its micro or macro.
 
-If it's micro it won't need a title or any other metadata. The full content will display on index and browsing pages. It can be embedded in macro content. It can also be displayed as part of a collection on a macro page.
+If it's micro it won't need a title or any other metadata. The full content will display on index and browsing pages. It can be embedded in macro content. It can also be displayed as part of a collection on a macro page. It may need to be cross-posted to other platforms like Bluesky, Mastodon, etc. depending on the type. You may also want to push it to an RSS feed. Either your main one or a separate one just for micro updates.
 
-If its macro it'll need at least a title and body, and optionally other properties depending on the type. E.g. cover image, author, description, growth stage, versions, aliases. The title and a preview of the content will display on index and browsing pages. When you reference it in other macro or micro posts, we show the title and a preview in a pop-over window on hover.
+If its macro it'll need at least a title and body, and optionally other properties depending on the type. E.g. cover image, author, description, growth stage, versions, aliases. The title and a preview of the content will display on index and browsing pages. When you reference it in other macro or micro posts, we show the title and a preview in a pop-over window on hover. You probably want to push it to your RSS feed.
 
 ### Implementation Ideas
 
