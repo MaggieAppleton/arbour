@@ -8,7 +8,7 @@ People tend to create two sizes of content on the web: micro content like Tweets
 
 Micro posts are very small pieces of content – they tend to be only a few sentences long. They don't have titles, descriptions, or tags. They're quick and easy to write, and sometimes act as the seeds of larger ideas. Their brevity is a feature, not a bug. You have to state your point clearly and concisely.
 
-Questions, beliefs, jokes, haikus, zettles, and quotes are all examples of micro content.
+Tweets, questions, beliefs, jokes, haikus, zettles, and quotes are all examples of micro content.
 
 People tend to publish micro posts on large, proprietary platforms like Twitter/X, Mastodon, Threads, and Tumblr. Likely because micro posts are well suited to social interactions. They're invitations for conversation and banter. So you need to publish them somewhere other people can respond to them.
 
@@ -55,3 +55,11 @@ We can provide a base set of content types, but writers should also be able to e
 I think some people will want unique types. For example, my types are essay, note, book, design pattern, now update, podcast, and conference talk. Someone who doesn't care about design patterns or do conference talks wouldn't need these types.
 
 A developer might have types like code snippet, prototype, and project. 
+
+Some sensible default types to start with:
+
+- Post (macro) – longform written content. Encompasses essays and notes.
+- Twoot (micro) – equivalent of a tweet, but a funnier word (mashup of tweet, toot, and thread)
+- Question (micro)
+- Book (micro)
+- Zettle (micro)
