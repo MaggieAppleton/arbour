@@ -38,3 +38,20 @@ Other themes make every piece of content its own standalone page you have to cli
 
 ## Proposed Solution
 
+Explicitly distinguish micro from macro content in Arbour.
+
+When you create a new type of content, you decide whether its micro or macro.
+
+If it's micro it won't need a title or any other metadata. The full content will display on index and browsing pages. It can be embedded in macro content. It can also be displayed as part of a collection on a macro page.
+
+If its macro it'll need at least a title and body, and optionally other properties depending on the type. E.g. cover image, author, description, growth stage, versions, aliases. The title and a preview of the content will display on index and browsing pages. When you reference it in other macro or micro posts, we show the title and a preview in a pop-over window on hover.
+
+### Implementation Ideas
+
+I'm imagining there's somewhere in Arbour where writers define their content types. Each type has its own set of properties, including whether its macro or micro. Maybe this is just done through templates?
+
+We can provide a base set of content types, but writers should also be able to edit and customise these.
+
+I think some people will want unique types. For example, my types are essay, note, book, design pattern, now update, podcast, and conference talk. Someone who doesn't care about design patterns or do conference talks wouldn't need these types.
+
+A developer might have types like code snippet, prototype, and project. 
