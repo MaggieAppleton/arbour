@@ -23,3 +23,7 @@ It's built with core web technologies: HTML, CSS, JavaScript, and Markdown. If y
 At the very least, you'll need to know how to clone a Git repo, `npm install` or `yarn install` the project, edit HTML and markdown files in a text editor, and deploy your garden somewhere like Netlify or Vercel.
 
 This requires knowing how to use the command line, having git and npm installed on your machine, and using a text editor like VS Code.
+
+## How is this built?
+
+With Astro
