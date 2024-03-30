@@ -1,7 +1,7 @@
 # Arbour
 
 Arbour is a simple framework for building your own digital garden.
-It features are designed help lower the friction to publishing your ideas online, build an interconnected body of work, and slowly update it over time.
+It's designed to lower the friction of publishing ideas online, building an interconnected body of work, and slowly updating it over time.
 
 ## Core features
 
