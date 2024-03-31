@@ -20,7 +20,7 @@ Having version control should help lower the friction to publishing. I predict i
 ## Proposed Solution
 
 - Give each macro post its own version history.
-- Every post starts as V0 by default, and then increments to V1, V2, etc. We're not doing semantic versioning or minor versions like V1.4.1.
+- Every post starts as V1 by default, and then increments to V2, V3, etc. We're not doing semantic versioning or minor versions like V1.4.1.
 - Each post should visually show the current version number, the total version count, and allow readers to easily navigate between versions.
 - When viewing an older version, there should be a clearly visible banner or section directing readers to the latest version.
 - Each version should show the date it was published.
@@ -43,7 +43,7 @@ Giving writers more control over what gets pushed to their RSS helps reduce the 
 - We also want to have one, simple, canonical URL for each post. Something like `garden.com/best-nuts-for-squirrels` 
 
 - When a reader goes to that canonical URL, it should redirect them to the latest version of the post.
-  - For example, if I have three versions of a post, and you go to `garden.com/best-nuts-for-squirrels`, it should redirect you to `garden.com/best-nuts-for-squirrels/v3`.
+  - For example, if I have three versions of a post, and you go to `garden.com/best-nuts-for-squirrels`, it should show the latest version of the content on that canonical link.  
   - You can still navigate to `garden.com/best-nuts-for-squirrels/v2` and v1.  
 
 - When you copy or share the URL around the web, it should *ideally* be the canonical URL, but that's hard to enforce.
