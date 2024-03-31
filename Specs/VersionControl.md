@@ -42,7 +42,7 @@ Giving writers more control over what gets pushed to their RSS helps reduce the 
 - Each version will need its own URL.
 - We also want to have one, simple, canonical URL for each post. Something like `garden.com/best-nuts-for-squirrels` 
 
-- When a reader goes to that canonical URL, it should redirect them to the latest version of the post.
+- When a reader goes to that canonical URL, it should show the latest version of the post.
   - For example, if I have three versions of a post, and you go to `garden.com/best-nuts-for-squirrels`, it should show the latest version of the content on that canonical link.  
   - You can still navigate to `garden.com/best-nuts-for-squirrels/v2` and v1.  
 
