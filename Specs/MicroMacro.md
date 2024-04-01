@@ -58,11 +58,19 @@ A developer might have types like code snippet, prototype, and project.
 
 Some sensible default types to start with:
 
-- Post (macro) – longform written content. Encompasses essays and notes.
-- Twoot (micro) – equivalent of a tweet, but a funnier word (mashup of tweet, toot, and thread)
-- Question (micro)
-- Book (micro)
+**Macro**
+- Essay – long-form written content
+- Note – rough ideas
 
-## URLs and Data Structure
+**Micro**
+- Twoot – equivalent of a tweet, but a funnier word (mashup of tweet, toot, and thread)
+   - Other candidates: sprout, shoot, bud 
+- Question
+- Book
 
-- URLs could be `bob.com/twoot00001` or `bob.com/t00001` or `bob.com/twoots/00001` where the first twoot is 1, and we have 5 numbers. This makes the Twoot linkable. But it displays 
+## Micro Content URLs and Data Structure
+
+- URLs could be `bob.com/twoot00001` or `bob.com/t00001` or `bob.com/twoots/00001` where the first twoot is 00001 and can go up to 99999. This makes the Twoot linkable, but most of the time readers will see micro content within the context of another page as a list.
+- Could have different letter pre-fixes based on the type like `bob.com/q00124` for questions or `bob.com/b00012` for books.
+- Micro content doesn't need to have versioning
+- Content is just the thing itself, plus some metadata like date published and related tags/topics

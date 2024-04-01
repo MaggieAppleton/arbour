@@ -1,4 +1,6 @@
-# Spec: Backlinks and Forwardlinks
+# Backlinks and Forward Links Spec
+
+We're both pretty familiar with bi-directional links by this point, but this gist is that when you link to another post on the site, that post should display that you've linked to it. So every post is linked in two directions.
 
 Post A linking to Post B is a _forwardlink_. Post B now has a _backlink_ to Post A.
 
