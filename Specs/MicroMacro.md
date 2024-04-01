@@ -62,3 +62,7 @@ Some sensible default types to start with:
 - Twoot (micro) – equivalent of a tweet, but a funnier word (mashup of tweet, toot, and thread)
 - Question (micro)
 - Book (micro)
+
+## URLs and Data Structure
+
+- URLs could be `bob.com/twoot00001` or `bob.com/t00001` or `bob.com/twoots/00001` where the first twoot is 1, and we have 5 numbers. This makes the Twoot linkable. But it displays 
