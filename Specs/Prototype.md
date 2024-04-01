@@ -15,3 +15,7 @@ We've decided to use Astro for the main framework. Astro takes care of a _lot_ o
 - Each post should have 3 versions, each with their own URL (`/banana/v1`, `/banana/v2`)
 - The canonical URL should redirect people to the latest version
 - Each post should link to the 2 others, and have a list of backlinks of posts that link to it
+- Make a set of micro and macro posts
+  - Twoots
+  - Notes
+  - Essays
