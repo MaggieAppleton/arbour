@@ -72,5 +72,13 @@ With this system, users can have a list of both markdown files and folder in a s
   - I can click a link to view the latest version.
 
 
+## Current Solution
+
+- When you write a post with only one version, it's just a flat mdx file at the top level
+- Once you want to make a new version, you create a file directory and put the post inside. Name the file directory the same as the post name. Now rename the original post to v1.mdx. You then make a v2.mdx for your new version. Same for v3.mdx, etc.
+
 ## Open Questions
+
+- Can we create some kind of commit message for each version? Can the author describe what changed from version to version? Would be reader-facing.
+	- Put the commit message in the frontmatter and make it optional
 
