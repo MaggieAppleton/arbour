@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import BlogPost from '../layouts/BlogPost.astro';
+import { buildSlugToLatestVersionMap, getSlugAndVersion } from '../utils/version-history';
+
+/*
+LIMITATION:
+All content, regardless of type (Content Collection) is given a flat url structure.
+e.g. src/content/blog/my-post.md lives at https://www.mywebsite.com/my-post.
+Therefore, slugs must be unique across collections. You can't have src/content/blog/arbour.md and src/content/projects/arbour.md.
+*/
+export async function getStaticPaths() {
+    const posts = await getCollection('blog');
+    const latestVersionsMap = buildSlugToLatestVersionMap(posts);
+
+    /**
+     * The latest version of a post will have a canonical slug without the version number.
+     * e.g. /blog/my-post/v4, if it is the latest version, will live at /blog/my-post.
+     * All other versions will live at their original slugs.
+     */
+    const postsWithLatestCanonicalSlugs = posts.map(post => {
+        let postSlug: string;
+
+        const { slugWithoutVersion, version } = getSlugAndVersion(post.slug);
+
+        if (latestVersionsMap[slugWithoutVersion] === version) {
+            postSlug = slugWithoutVersion;
+        } else {
+            postSlug = post.slug;
+        }
+
+        return {
+            params: { slug: postSlug },
+            props: {
+                ...post,
+                slug: postSlug,
+            },
+        };
+    });
+
+    return postsWithLatestCanonicalSlugs;
+}
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<BlogPost {...post.data}>
+    <Content />
+</BlogPost>
