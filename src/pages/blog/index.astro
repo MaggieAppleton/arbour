@@ -11,24 +11,22 @@ const postsCollection = (await getCollection('blog')).sort(
     (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
 
+// Only show the latest version of each post on the index page
 const latestVersionsMap = buildSlugToLatestVersionMap(postsCollection);
 
-const posts = postsCollection.map(post => {
-    let postSlug: string;
-
+const posts = postsCollection.reduce<typeof postsCollection>((acc, post) => {
     const { slugWithoutVersion, version } = getSlugAndVersion(post.slug);
 
-    if (latestVersionsMap[slugWithoutVersion] === version) {
-        postSlug = slugWithoutVersion;
-    } else {
-        postSlug = post.slug;
+    if (latestVersionsMap[slugWithoutVersion] === version || !version) {
+        acc.push({
+            ...post,
+            // @ts-expect-error we're overwriting the slug here, which is typed by literals instead of as a string
+            slug: slugWithoutVersion,
+        });
     }
 
-    return {
-        ...post,
-        slug: postSlug,
-    };
-});
+    return acc;
+}, []);
 ---
 
 <!doctype html>
