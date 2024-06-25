@@ -21,9 +21,14 @@ export async function getStaticPaths() {
     const postsWithLatestCanonicalSlugs = posts.map(post => {
         let postSlug: string;
 
-        const { slugWithoutVersion, version } = getSlugAndVersion(post.slug);
+        const { slugWithoutVersion, version: slugVersion } = getSlugAndVersion(post.slug);
 
-        if (latestVersionsMap[slugWithoutVersion] === version) {
+        const versionString = post.id.split('/v').pop();
+        const version = !slugVersion ? 1 : parseInt(versionString!, 10);
+
+        const latestVersion = latestVersionsMap[slugWithoutVersion];
+
+        if (latestVersion === version) {
             postSlug = slugWithoutVersion;
         } else {
             postSlug = post.slug;
@@ -34,6 +39,8 @@ export async function getStaticPaths() {
             props: {
                 ...post,
                 slug: postSlug,
+                version,
+                latestVersion,
             },
         };
     });
@@ -45,6 +52,6 @@ const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<BlogPost {...post.data}>
+<BlogPost {...post.data} version={post.version} latestVersion={post.latestVersion}>
     <Content />
 </BlogPost>

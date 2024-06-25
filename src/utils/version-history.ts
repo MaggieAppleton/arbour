@@ -27,6 +27,7 @@ export const buildSlugToLatestVersionMap = (posts: CollectionEntry<'blog'>[]) =>
         const { slugWithoutVersion, version } = getSlugAndVersion(slug);
 
         if (version === undefined) {
+            acc[slug] = 1;
             return acc;
         }
 
